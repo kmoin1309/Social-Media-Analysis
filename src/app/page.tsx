@@ -1,10 +1,30 @@
-import { Button } from '@/components/ui/button';
+'use client';
+import React from 'react';
+import HeroSection from '@/components/HeroSection';
+import AnalyticsFeaturesSection from '@/components/AnalyticsFeaturesSection';
+import HowItWorks from '@/components/HowItWorks';
+import MetricsDashboard from '@/components/MetricsDashboard';
+import TestimonialSlider from '@/components/TestimonialSlider';
+import PricingSection from '@/components/PricingSection';
+import FAQAndFooter from '@/components/FAQAndFooter';
+import Header from '@/components/Header';
 
-export default function Home() {
+
+const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
-      <h1 className="text-4xl font-bold mb-4">Next.js</h1>
-      <Button variant="default">Click Me</Button>
+    <div className="min-h-screen bg-black">
+      <Header />
+      <main>
+        <HeroSection />
+        <AnalyticsFeaturesSection/>
+        <HowItWorks/>
+        <MetricsDashboard/>
+        <TestimonialSlider/>
+        <PricingSection/>
+        <FAQAndFooter/>
+      </main>
     </div>
   );
-}
+};
+
+export default LandingPage;
