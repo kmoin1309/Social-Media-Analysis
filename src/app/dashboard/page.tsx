@@ -1,6 +1,6 @@
 "use client"
 
-import { Sidebar } from "@/components/ui/sidebar";
+import { Sidebar } from "@/components/Sidebar";
 import { MetricCard } from "@/components/MetricCard";
 import { BarChart } from "@/components/BarChart";
 import { Demographics } from "@/components/Demographics";
